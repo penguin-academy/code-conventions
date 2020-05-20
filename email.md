@@ -20,7 +20,9 @@ Login to two services:
 1) In the left sidebar goto: Settings > Sender Authentication (or directly access https://app.sendgrid.com/settings/sender_auth).
 2) Press the button "Authenticate Your Domain".
 3) Choose Cloudflare as a DNS host and select "YES" to brand the tracking links.
-4) Enter the client domain that looks like this: `<clientname>.penguin.tools`
+4) Enter the client domain that looks like this: `<clientname>.penguin.tools` and hit "next".
+
+Kepp Sendgrid open and head over to Cloudflare!
 
 5) In cloudflare: Select the "penguin.tools" domain and make sure you are in the DNS settings.
 6) Create each of the entries shown in sendgrid in cloudflare. Disable the proxy for those entries.
