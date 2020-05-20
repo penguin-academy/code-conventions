@@ -37,12 +37,24 @@ Kepp Sendgrid open and head over to Cloudflare!
 
 ### Receive the API Key
 
-Please create exactly one API key per client. Do not share API keys between clients. Double check on the API Key Page that no key exists yet. Goto Settings > API Keys (https://app.sendgrid.com/settings/api_keys)
+We are using a set of two API Key. One for the Server - a production API Key - and one for the developer - a dev API Key.
 
-*In case there is already an API Key, you are in trouble. You should go and check who has it because you can't get it from Sendgrid anymore. Only continue to create an additional key if you really can't find the existing one.*
+#### Production API Key
+
+Please create exactly one Production API key per client. Do not share API keys between clients. Double check on the API Key Page that no key exists yet. Goto Settings > API Keys (https://app.sendgrid.com/settings/api_keys)
+
+*In case there is already an API Key and you don't have it, you are in trouble. You should go and check who has it or where it is (probably it's a good idea to look in the server env variables - eg. heroku ) because you can't get it from Sendgrid anymore. Only continue to create an additional key if you really can't find the existing one.*
 
 1) In the sidebar goto: EMAIL API > Integration Guide (or directly access https://app.sendgrid.com/guide/integrate).
 2) Select your setup method and your programming language if required.
 3) Once you see the instructions, under "Create your API key", enter `<clientname>` as API Key Name and press "Create Key". This will create a key with restricted access to only allow to send emails. (that is probably what you want!)
 
-Share the API key with the developers who need it. You probably also want to share the instructions.
+Add this API Key to the production Server (and any other servers like staging environments). 
+DO NOT share this API key with anyone.
+
+#### Developer API Key
+
+Please create one Developer API Key *per lab request*! Ensure to delete the API key after the request is completed. You are responsible for this.
+
+Follow the steps above to create a second API key. But enter `<clientname>-#<request-id>` as API Key Name.
+Share the API Key with the developers who need it using the lab sharing functionality. You probably also want to share the instructions.
