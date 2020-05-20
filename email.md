@@ -49,8 +49,9 @@ Please create exactly one Production API key per client. Do not share API keys b
 2) Select your setup method and your programming language if required.
 3) Once you see the instructions, under "Create your API key", enter `<clientname>` as API Key Name and press "Create Key". This will create a key with restricted access to only allow to send emails. (that is probably what you want!)
 
-Add this API Key to the production Server (and any other servers like staging environments). Per default you should use the default environment vairable name `SENDGRID_API_KEY` - share the environment variable name with the developers.
-**DO NOT share** this API key with anyone.
+Add this API Key to the production Server (and any other servers like staging environments). E.g. Heroku: Go to the application > Settings > Config Vars and press "Reveal Config Vars". Per default you should use the default environment vairable name `SENDGRID_API_KEY` - share the environment variable name with the developers.
+
+**DO NOT share** this Production API Key with anyone.
 
 #### Developer API Key
 
