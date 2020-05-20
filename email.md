@@ -50,7 +50,7 @@ Please create exactly one Production API key per client. Do not share API keys b
 3) Once you see the instructions, under "Create your API key", enter `<clientname>` as API Key Name and press "Create Key". This will create a key with restricted access to only allow to send emails. (that is probably what you want!)
 
 Add this API Key to the production Server (and any other servers like staging environments). 
-DO NOT share this API key with anyone.
+**DO NOT share** this API key with anyone.
 
 #### Developer API Key
 
@@ -58,3 +58,5 @@ Please create one Developer API Key *per lab request*! Ensure to delete the API 
 
 Follow the steps above to create a second API key. But enter `<clientname>-#<request-id>` as API Key Name.
 Share the API Key with the developers who need it using the lab sharing functionality. You probably also want to share the instructions.
+
+Keep in mind to delete the API Key once the request is completed.
